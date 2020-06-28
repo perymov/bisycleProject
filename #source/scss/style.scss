@@ -2,9 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 @import "_nullstyle";
 /*----------Конец файла обнуляющих стилей-----------*/
-@import "_header";
-@import "main";
-@import "footer";
 
 .wrapper {
 	min-height: 100%;
@@ -26,3 +23,7 @@
 	@include flexbox();
 	flex-direction: column;
 }
+
+@import "_header";
+@import "main";
+@import "footer";

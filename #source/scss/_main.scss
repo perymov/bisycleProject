@@ -4,8 +4,7 @@
 .generation {
 	padding: 120px 0px;
 	background-color: #f7f7f7;
-	&__block {
-	}
+
 	@media (max-width: 900px) {
 		padding: 80px 0px;
 	}
@@ -116,8 +115,6 @@
 		}
 	}
 
-	&__image {
-	}
 	&:hover {
 		.item__logo {
 			opacity: 1;
@@ -175,8 +172,6 @@
 	background-size: cover;
 }
 
-.brands2 {
-}
 .brands2 .brands {
 	&__row {
 		@include flexbox();
@@ -197,8 +192,6 @@
 	}
 }
 
-.brands3 {
-}
 .brands3 .brands {
 	&__row {
 		@include flexbox();
@@ -232,8 +225,6 @@
 	@media (max-width: 1100px) {
 		padding: 60px 0 30px 0;
 	}
-	&__body {
-	}
 
 	&__item {
 		text-align: center;
@@ -263,8 +254,6 @@
 		color: #848789;
 	}
 }
-.container {
-}
 
 .slick-list {
 	overflow: hidden;
@@ -274,9 +263,6 @@
 .slick-track {
 	display: flex;
 	align-items: flex-start;
-}
-
-.slider__body {
 }
 
 .slider__body .slick-dots {
@@ -334,9 +320,6 @@
 		flex: 0 1 33.333%;
 	}
 
-	&__block {
-	}
-
 	&__footer {
 		padding: 75px 0px;
 		text-align: center;
@@ -366,6 +349,8 @@
 		&__column3 {
 			flex: 0 1 100%;
 		}
+	}
+	@media (max-width: 600px) {
 		&__footer {
 			padding: 40px 0px;
 		}
@@ -382,9 +367,6 @@
 
 	&__column {
 		flex: 0 1 50%;
-	}
-
-	&__items {
 	}
 
 	&__bg {
@@ -405,14 +387,9 @@
 		position: relative;
 		padding: 0px 0px 200% 0px;
 	}
-
-	&__column1 {
-	}
 }
-.shop__block .item {
-	&__logo {
-	}
 
+.shop__block .item {
 	&__image {
 		background: url("../img/shop_img/shop_img1.png") center center no-repeat;
 		background-size: cover;
@@ -462,4 +439,84 @@
 		background: url("../img/shop_img/shop_img8.png") center center no-repeat;
 		background-size: cover;
 	}
+}
+
+// FORMMMMMMMMMM
+
+.form {
+	&__body {
+		max-width: 534px;
+		text-align: center;
+		margin: 0px auto;
+	}
+
+	&__logo {
+		margin: 110px 0px 40px 0px;
+	}
+
+	&__label {
+		font-size: 24px;
+		font-style: italic;
+		color: #848789;
+		margin: 0px 0px 35px 0px;
+	}
+
+	&__form {
+		@include flexbox();
+		justify-content: center;
+		margin: 0px 0px 110px 0px;
+	}
+
+	&__input {
+		flex: 1 1 auto;
+	}
+
+	&__button {
+		flex: 0 0 126px;
+		background-color: #64c29e;
+		margin: 0px 0px 0px 10px;
+	}
+
+	&__btn {
+		font-size: 24px;
+		font-weight: 300;
+		width: 126px;
+		height: 69px;
+		line-height: 69px;
+		color: #ffffff;
+		background-color: transparent;
+	}
+
+	@media (max-width: 600px) {
+		&__logo {
+			margin: 50px 0px 40px 0px;
+		}
+		&__form {
+			margin: 0px 0px 50px 0px;
+		}
+	}
+	@media (max-width: 500px) {
+		&__form {
+			display: block;
+		}
+		&__button {
+			margin: 10px 0px 0px 0px;
+		}
+	}
+}
+
+.input {
+	width: 100%;
+	height: 69px;
+	background-color: #ffffff;
+	border: 1px solid #d3d7d9;
+	padding: 0px 26px;
+	font-size: 20px;
+	font-weight: 400;
+	font-style: italic;
+	color: #929292;
+	opacity: 0.6;
+}
+.input:focus {
+	color: #333;
 }

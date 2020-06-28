@@ -89,6 +89,33 @@ h6 {
 }
 
 /*----------Конец файла обнуляющих стилей-----------*/
+.wrapper {
+  min-height: 100%;
+  font-family: Lato;
+}
+
+.container {
+  max-width: 1130px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .header {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
@@ -119,7 +146,7 @@ h6 {
 .header__logo {
   position: absolute;
   left: 50%;
-  top: 35;
+  top: 35px;
   z-index: 12;
   transform: translate3d(-50%, 0px, 0px);
   -webkit-transform: translate3d(-50%, 0px, 0px);
@@ -276,9 +303,6 @@ h6 {
   .icon__menu span:last-child {
     top: auto;
     bottom: 0;
-  }
-  .icon__menu.active {
-    position: fixed;
   }
   .icon__menu.active span {
     -webkit-transform: scale(0);
@@ -726,6 +750,9 @@ h6 {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
   }
+}
+
+@media (max-width: 600px) {
   .shop__footer {
     padding: 40px 0px;
   }
@@ -815,29 +842,155 @@ h6 {
   background-size: cover;
 }
 
-.wrapper {
-  min-height: 100%;
-  font-family: Lato;
-}
-
-.container {
-  max-width: 1130px;
+.form__body {
+  max-width: 534px;
+  text-align: center;
   margin: 0px auto;
-  padding: 0px 15px;
 }
 
-.page {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+.form__logo {
+  margin: 110px 0px 40px 0px;
+}
+
+.form__label {
+  font-size: 24px;
+  font-style: italic;
+  color: #848789;
+  margin: 0px 0px 35px 0px;
+}
+
+.form__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 0px 110px 0px;
+}
+
+.form__input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.form__button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 126px;
+          flex: 0 0 126px;
+  background-color: #64c29e;
+  margin: 0px 0px 0px 10px;
+}
+
+.form__btn {
+  font-size: 24px;
+  font-weight: 300;
+  width: 126px;
+  height: 69px;
+  line-height: 69px;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .form__logo {
+    margin: 50px 0px 40px 0px;
+  }
+  .form__form {
+    margin: 0px 0px 50px 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .form__form {
+    display: block;
+  }
+  .form__button {
+    margin: 10px 0px 0px 0px;
+  }
+}
+
+.input {
+  width: 100%;
+  height: 69px;
+  background-color: #ffffff;
+  border: 1px solid #d3d7d9;
+  padding: 0px 26px;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+  opacity: 0.6;
+}
+
+.input:focus {
+  color: #333;
+}
+
+.footer {
+  background-color: #f7f7f7;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__adress {
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #848789;
+  margin: 100px 0px 100px 0px;
+}
+
+.footer__adress span {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.footer__logos a {
+  margin: 108px 0px;
+}
+
+.footer__logos a:nth-child(2) {
+  margin: 108px 15px;
+}
+
+@media (max-width: 600px) {
+  .footer__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__adress {
+    margin: 20px 0px;
+    text-align: center;
+  }
+  .footer__logos {
+    margin: 0px 0px 20px 0px;
+  }
+  .footer__logo {
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+.logo__text {
+  font-size: 14px;
+  line-height: 30px;
+  font-style: italic;
+  color: #848789;
+  margin: 0px 10px 0px 0px;
 }
